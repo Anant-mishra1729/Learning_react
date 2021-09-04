@@ -5,26 +5,55 @@ import React, { useState } from "react";
 export default function Textform() {
   // Convert to uppercase
   const handleUpClick = () => {
-    setUpper(text.toUpperCase());
+    modifyText(text.toUpperCase());
+  };
+
+  const removeExtraSpaces = () =>{
+    // modifyText();
+    modifyText(text.replace(/\s\s+/g,' '));
+  }
+
+  // Counting words
+  const countWords = () => {
+    let matches = text.match(/\S+/g);
+    return matches ? matches.length : 0;
+  };
+
+  // Reading time
+  const readTime = () => {
+    let time_min = countWords() * 0.008;
+    let sec = time_min * 60;
+    if (time_min < 1) {
+      return sec + " seconds";
+    } else {
+      return (
+        Math.floor(time_min) + " minute " + (sec % 60).toFixed(2) + " seconds"
+      );
+    }
   };
 
   // Convert to lowercase
   const handleLowClick = () => {
-    setUpper(text.toLowerCase());
+    modifyText(text.toLowerCase());
+  };
+
+  // Clear text
+  const clearText = () => {
+    modifyText("");
   };
 
   // Without this you can't write in text area
   const handleOnChange = (event) => {
-    setUpper(event.target.value);
+    modifyText(event.target.value);
   };
 
   // Using hook
-  const [text, setUpper] = useState("");
+  const [text, modifyText] = useState("");
 
   return (
     <>
       <div>
-        <div className="mb-3">
+        <div className="mb-3 mx-2 my-1">
           <textarea
             className="form-control"
             value={text}
@@ -48,16 +77,25 @@ export default function Textform() {
         >
           Convert to lowercase
         </button>
+        <button className = "btn btn-secondary mx-2" onClick={removeExtraSpaces}>
+          Remove extra spaces
+        </button>
+        <button className="btn btn-danger" onClick={clearText}>
+          Reset
+        </button>
       </div>
 
       <div className="container my-2">
         <h1>Summary</h1>
+        <p>Words : {countWords()}</p>
+        <p>Characters : {text.length}</p>
         <p>
-          {text.split(" ").length} words and {text.length} characters
+          Avg reading time (130wpm) : <span id="readTime">{readTime()}</span>
         </p>
-        <p>
-          Reading time : <span>{text.split(" ").length * 0.008}</span>
-        </p>
+      </div>
+      <div className="container my-2">
+        <h1>Preview</h1>
+        <p>{text}</p>
       </div>
     </>
   );
