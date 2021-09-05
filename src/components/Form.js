@@ -3,22 +3,24 @@ import React, { useState } from "react";
 // Usestate -> Hooks => For handling states in functional based components
 
 export default function Textform(props) {
-  const headingStyle = {color : props.textColors.headingColor};
-  const textStyle = {color : props.textColors.textColor};
+  const headingStyle = { color: props.mode === "light" ? "black" : "orange" };
+  const textStyle = { color: props.mode === "light" ? "black" : "white" };
 
   // Convert to uppercase
   const handleUpClick = () => {
     modifyText(text.toUpperCase());
+    props.showAlert("Text is capitalized","secondary");
   };
 
   const removeExtraSpaces = () => {
     modifyText(text.replace(/\s\s+/g, " "));
+    props.showAlert("Extra spaces removed","secondary");
   };
 
   // Counting words
   const countWords = () => {
-    let matches = text.match(/\S\S+/g);
-    return matches ? matches.length : 0;
+    let matches = text.split(/[^\s]+/).length - 1;
+    return matches;
   };
 
   // Reading time
@@ -37,11 +39,13 @@ export default function Textform(props) {
   // Convert to lowercase
   const handleLowClick = () => {
     modifyText(text.toLowerCase());
+    props.showAlert("Text converted to lower case","secondary");
   };
 
   // Clear text
   const clearText = () => {
     modifyText("");
+    props.showAlert("Reset completed ","danger");
   };
 
   // Without this you can't write in text area
@@ -63,6 +67,10 @@ export default function Textform(props) {
             onChange={handleOnChange}
             id="myText"
             rows="8"
+            style={{
+              backgroundColor: props.mode === "light" ? "#f8f9fa" : "rgb(33 37 41)",
+              color :props.mode === "light" ? "rgb(33 37 41)" : "#f8f9fa",
+            }}
           ></textarea>
         </div>
         <button
@@ -89,15 +97,15 @@ export default function Textform(props) {
 
       <div className="container my-2">
         <h1 style={headingStyle}>Summary</h1>
-        <p style = {textStyle}>Words : {countWords()}</p>
-        <p style = {textStyle}>Characters : {text.length}</p>
-        <p style = {textStyle}>
+        <p style={textStyle}>Words : {countWords()}</p>
+        <p style={textStyle}>Characters : {text.length}</p>
+        <p style={textStyle}>
           Avg reading time (130wpm) : <span id="readTime">{readTime()}</span>
         </p>
       </div>
       <div className="container my-2">
         <h1 style={headingStyle}>Preview</h1>
-        <p style = {textStyle}>{text}</p>
+        <p style={textStyle}>{text}</p>
       </div>
     </>
   );
