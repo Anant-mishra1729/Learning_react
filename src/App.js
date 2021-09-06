@@ -1,10 +1,16 @@
-// import logo from './logo.svg';
 // import './App.css';
-//import About from './components/About';
+import About from './components/About';
 import Textform from './components/Form';
 import Navbar from './components/Navbar';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
+
+// Importing react router -> Used to change contents of page without reloading page
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   
@@ -39,12 +45,23 @@ function App() {
   return (
     <>
       {/* Used default about_us value from navbar.js*/}
+        <Router>
       <Navbar title="Texter" aboutText="About us" mode = {mode} toggleMode = {toggleMode}/>
       <Alert alert = {alert}/>
       <div className="container my-3">
-        <Textform mode = {mode} showAlert = {showAlert}/>
+
+        {/* exact path is used for complete matching of path url */}
+      <Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
+      
+          <Route exact path="/">
+          <Textform mode = {mode} showAlert = {showAlert}/>
+          </Route>
+        </Switch>
       </div>
-      {/* <About/> */}
+      </Router>
     </>
   );
 }
