@@ -36,7 +36,7 @@ function App() {
     });
     setTimeout(() => {
       setAlert(null);
-    }, 1500);
+    }, 500);
   };
 
   const [mode, setMode] = useState('light'); // Hook for dark mode 
