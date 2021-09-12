@@ -6,7 +6,12 @@ import React, { useState } from "react";
 import Alert from "./components/Alert";
 
 // Importing react router -> Used to change contents of page without reloading page
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
   const toggleMode = () => {
