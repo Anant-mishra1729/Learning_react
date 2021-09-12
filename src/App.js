@@ -7,7 +7,7 @@ import Alert from "./components/Alert";
 
 // Importing react router -> Used to change contents of page without reloading page
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
