@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Texter/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/Texter/static/js/main.9dbe969c.chunk.js",
-    "main.js.map": "/Texter/static/js/main.9dbe969c.chunk.js.map",
+    "main.js": "/Texter/static/js/main.8c45961f.chunk.js",
+    "main.js.map": "/Texter/static/js/main.8c45961f.chunk.js.map",
     "runtime-main.js": "/Texter/static/js/runtime-main.3a90cd68.js",
     "runtime-main.js.map": "/Texter/static/js/runtime-main.3a90cd68.js.map",
     "static/js/2.84a55397.chunk.js": "/Texter/static/js/2.84a55397.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3a90cd68.js",
     "static/js/2.84a55397.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.9dbe969c.chunk.js"
+    "static/js/main.8c45961f.chunk.js"
   ]
 }
