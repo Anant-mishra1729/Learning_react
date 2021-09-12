@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Texter/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/Texter/static/js/main.8c45961f.chunk.js",
-    "main.js.map": "/Texter/static/js/main.8c45961f.chunk.js.map",
+    "main.js": "/Texter/static/js/main.0957a600.chunk.js",
+    "main.js.map": "/Texter/static/js/main.0957a600.chunk.js.map",
     "runtime-main.js": "/Texter/static/js/runtime-main.3a90cd68.js",
     "runtime-main.js.map": "/Texter/static/js/runtime-main.3a90cd68.js.map",
-    "static/js/2.84a55397.chunk.js": "/Texter/static/js/2.84a55397.chunk.js",
-    "static/js/2.84a55397.chunk.js.map": "/Texter/static/js/2.84a55397.chunk.js.map",
+    "static/js/2.91f2f72e.chunk.js": "/Texter/static/js/2.91f2f72e.chunk.js",
+    "static/js/2.91f2f72e.chunk.js.map": "/Texter/static/js/2.91f2f72e.chunk.js.map",
     "static/js/3.3ef20220.chunk.js": "/Texter/static/js/3.3ef20220.chunk.js",
     "static/js/3.3ef20220.chunk.js.map": "/Texter/static/js/3.3ef20220.chunk.js.map",
     "index.html": "/Texter/index.html",
     "static/css/main.4a4137e4.chunk.css.map": "/Texter/static/css/main.4a4137e4.chunk.css.map",
-    "static/js/2.84a55397.chunk.js.LICENSE.txt": "/Texter/static/js/2.84a55397.chunk.js.LICENSE.txt",
+    "static/js/2.91f2f72e.chunk.js.LICENSE.txt": "/Texter/static/js/2.91f2f72e.chunk.js.LICENSE.txt",
     "static/media/success.c4a8b0b3.svg": "/Texter/static/media/success.c4a8b0b3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3a90cd68.js",
-    "static/js/2.84a55397.chunk.js",
+    "static/js/2.91f2f72e.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.8c45961f.chunk.js"
+    "static/js/main.0957a600.chunk.js"
   ]
 }
