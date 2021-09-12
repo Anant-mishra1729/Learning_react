@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Texter.git/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/Texter.git/static/js/main.9dbe969c.chunk.js",
-    "main.js.map": "/Texter.git/static/js/main.9dbe969c.chunk.js.map",
-    "runtime-main.js": "/Texter.git/static/js/runtime-main.72648735.js",
-    "runtime-main.js.map": "/Texter.git/static/js/runtime-main.72648735.js.map",
-    "static/js/2.84a55397.chunk.js": "/Texter.git/static/js/2.84a55397.chunk.js",
-    "static/js/2.84a55397.chunk.js.map": "/Texter.git/static/js/2.84a55397.chunk.js.map",
-    "static/js/3.3ef20220.chunk.js": "/Texter.git/static/js/3.3ef20220.chunk.js",
-    "static/js/3.3ef20220.chunk.js.map": "/Texter.git/static/js/3.3ef20220.chunk.js.map",
-    "index.html": "/Texter.git/index.html",
-    "static/css/main.4a4137e4.chunk.css.map": "/Texter.git/static/css/main.4a4137e4.chunk.css.map",
-    "static/js/2.84a55397.chunk.js.LICENSE.txt": "/Texter.git/static/js/2.84a55397.chunk.js.LICENSE.txt",
-    "static/media/success.c4a8b0b3.svg": "/Texter.git/static/media/success.c4a8b0b3.svg"
+    "main.css": "/Texter/static/css/main.4a4137e4.chunk.css",
+    "main.js": "/Texter/static/js/main.9dbe969c.chunk.js",
+    "main.js.map": "/Texter/static/js/main.9dbe969c.chunk.js.map",
+    "runtime-main.js": "/Texter/static/js/runtime-main.3a90cd68.js",
+    "runtime-main.js.map": "/Texter/static/js/runtime-main.3a90cd68.js.map",
+    "static/js/2.84a55397.chunk.js": "/Texter/static/js/2.84a55397.chunk.js",
+    "static/js/2.84a55397.chunk.js.map": "/Texter/static/js/2.84a55397.chunk.js.map",
+    "static/js/3.3ef20220.chunk.js": "/Texter/static/js/3.3ef20220.chunk.js",
+    "static/js/3.3ef20220.chunk.js.map": "/Texter/static/js/3.3ef20220.chunk.js.map",
+    "index.html": "/Texter/index.html",
+    "static/css/main.4a4137e4.chunk.css.map": "/Texter/static/css/main.4a4137e4.chunk.css.map",
+    "static/js/2.84a55397.chunk.js.LICENSE.txt": "/Texter/static/js/2.84a55397.chunk.js.LICENSE.txt",
+    "static/media/success.c4a8b0b3.svg": "/Texter/static/media/success.c4a8b0b3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.72648735.js",
+    "static/js/runtime-main.3a90cd68.js",
     "static/js/2.84a55397.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
     "static/js/main.9dbe969c.chunk.js"
