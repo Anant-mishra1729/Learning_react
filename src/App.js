@@ -52,6 +52,10 @@ function App() {
           <Route exact path="/">
             <Textform mode={mode} showAlert={showAlert} />
           </Route>
+
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
         </Switch>
       </div>
     </Router>
